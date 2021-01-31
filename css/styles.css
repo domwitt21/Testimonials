@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color: tomato;
+}
+
+/*///////////////////////////////////
+ATTRIBUTION
+///////////////////////////////////*/
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*//////////////////////////////////
+GLOBAL STYLES
+//////////////////////////////////*/
+
+.mainContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.innerContainer {
+    display: grid;
+    grid-template: 
+        'header header header2 header3'
+        'header4 header5 header5 header3';
+    column-gap: 2.5%;
+    row-gap: 5.5%;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*//////////////////////////////////
+TESTIMONIALS STYLES
+//////////////////////////////////*/
+img.quotations {
+    position: absolute;
+    z-index: -1;
+    top: 13%;
+    left: 38%;
+}
+.danielContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    grid-area: header;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: hsl(263, 55%, 52%);
+    color: rgba(255, 255, 255, 0.904);
+    z-index: 0;
+}
+.jonaContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    grid-area: header2;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 7%;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.jonaContainer h5 {
+    margin-top: 7%;
+}
+.jonaContainer p {
+    margin-top: 7%;
+}
+.kiraContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    grid-area: header3;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
+}
+.kiraContainer h5 {
+    margin-top: 8%;
+}
+.kiraContainer p {
+    color: black;
+    margin-top: 10%;
+}
+.jeanContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    grid-area: header4;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.jeanContainer h6 {
+    margin-top: 4%;
+    margin-left: 8%;
+}
+.jeanContainer h5 {
+    margin-top: 12%;
+    margin-left: 5%;
+}
+.jeanContainer p {
+    color: black;
+    margin-top: 14%;
+    margin-left: 1%;
+}
+.patrContainer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+    grid-area: header5;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color:  hsl(219, 29%, 14%);
+    color: white;
+}
+.patrContainer h5 {
+    margin-top: 4%;
+}
+.patrContainer p {
+    margin-top: 4%;
+}
+img#daniel {
+    border-radius: 100px;
+    border: 1px solid white;
+    width:  37px;
+    float: left;
+    margin-right: 4%;
+}
+.jonaContainer img {
+    border-radius: 100px;
+    border: 1px solid white;
+    width:  30px;
+    float: left;
+    margin-right: 8%;
+    margin-top: 1%;
+}
+.kiraContainer img {
+    border-radius: 100px;
+    border: 1px solid white;
+    width:  30px;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+.jeanContainer img {
+    border-radius: 100px;
+    border: 1px solid white;
+    width:  30px;
+    float: left;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 6%;
+}
+.patrContainer img {
+    border-radius: 100px;
+    border: 1px solid white;
+    width:  30px;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+h5,p {
+    margin-top: 3%;
+}
+h6 {
+    opacity: 80%;
+    font-weight: bold;
+}
+h6 aside {
+    font-weight: lighter;
+    opacity: 50%;
+}
+h5 {
+    font-weight: bold;
+    font-size: 22px;
+}
+p {
+    font-size: 16px;
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+/*////////////////////////////
+MOBILE STUFF
+////////////////////////////*/
+
+@media screen and (max-width: 1440px) {
+    .innerContainer { display: inline-grid; }
+    .mainContainer { margin-left: auto; margin-right: auto; margin-top: 5%; }
+    p { font-size: 11px; }
+    .kiraContainer p { font-size: 14px; }
+    .jonaContainer { width: 102%; }
+    .jonaContainer p { font-size: 14px; margin-top: 7%; }
+    .jonaContainer h5 {  margin-top: 10%; }
+    .danielContainer { padding: 0; padding-right: 5%; padding-left: 5%; padding-top: 5%; width: 102%; }
+    .danielContainer h5 { margin-top: 5%; }
+    .danielContainer p { margin-top: 5%; width: 100%; font-size: 13px; }
+    img.quotations { top: 16%; left: 36%; }
+    .patrContainer h5 { font-size: 16px; }
+    .jeanContainer { padding: 5% }
+    .jeanContainer p { font-size: 15px; }
+    .jeanContainer h5 { font-size: 20px; }
+    .patrContainer {  }
+    .patrContainer p { font-size: 12px; }
+    .patrContainer h5 { font-size: 20px; }
+}
+@media screen and (max-width: 375px) {
+    .innerContainer { display: inline-block; }
+    .danielContainer { padding: 5%; margin-bottom: 7%; }
+    .jonaContainer { padding: 5%; margin-bottom: 7%; }
+    .kiraContainer { padding: 5%; margin-bottom: 7%; }
+    .patrContainer { padding: 5%; margin-bottom: 7%; }
+    .jeanContainer { padding: 5%; margin-bottom: 7%; }
+    img.quotations { top: 5%; left: 45%; }
+}
